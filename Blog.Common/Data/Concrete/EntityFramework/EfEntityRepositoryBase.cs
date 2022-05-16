@@ -17,7 +17,7 @@ namespace Blog.Common.Data.Concrete.EntityFramework
         {
             _context = context;
         }
-        public async Task AddSync(TEntity entity)
+        public async Task AddAsync(TEntity entity)
         {
             await _context.Set<TEntity>().AddAsync(entity);
         }
